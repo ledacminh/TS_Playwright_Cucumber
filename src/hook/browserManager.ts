@@ -2,7 +2,9 @@ import { chromium, firefox, LaunchOptions } from "@playwright/test";
 
 
 const option: LaunchOptions = {
-    headless: false
+    headless: false,
+    args: ["--start-fullscreen"]
+    //args: ["--start-maximized"]
 }
 export const invokeBrowser = () => {
     const browserType = process.env.BROWSER;
