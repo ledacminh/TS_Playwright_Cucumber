@@ -20,7 +20,7 @@ Before(async function () {
 After(async function ({ pickle, result }) {
     console.log("Status" + result?.status)
     if (result?.status == Status.FAILED) {
-        const img = await pageFixture.page.screenshot({ path: "./test-rerult/screenshots/" + pickle.name, type: "png" });
+        const img = await pageFixture.page.screenshot({ path: "./test-results/screenshots/" + pickle.name, type: "png" });
         await this.attach(img, "image/png");
     }
 

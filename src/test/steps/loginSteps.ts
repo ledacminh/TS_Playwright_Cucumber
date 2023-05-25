@@ -37,7 +37,8 @@ When('User click on the login button', async function () {
 
 When('Login should fail', async function () {
     const failureMessage = pageFixture.page.locator("//mat-error[text()='Username or Password is incorrect.']");
-    await expect(failureMessage).toBeVisible();
+    await expect(failureMessage).toBeDisabled();
+    await pageFixture.page.locator("(//span[text()='Login'])[2]").click();
 });
 
 Then('Login should be success', async function () {
