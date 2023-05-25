@@ -47,7 +47,6 @@ When('Login should fail', async function () {
 
 Then('Login should be success', async function () {
     const text = await fixture.page.locator("(//span[text()='Login'])[2]").textContent();
-    console.log("Login successfully " + text);
     fixture.logger.info("User login successully!");
 
 });

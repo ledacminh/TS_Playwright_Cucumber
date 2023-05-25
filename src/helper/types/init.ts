@@ -5,5 +5,5 @@ try {
     fs.emptyDir("test-results");
 
 } catch (error) {
-    console.log("Folder not created! " + error);
+    throw new Error("Folder not created!");
 }

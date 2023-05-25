@@ -11,7 +11,7 @@ Feature: User Authentication tests
     Then Login should be success
 
   Scenario: Login should not be success
-    Given User enter the username as "koushik"
-    Given User enter the password as "Passkoushik"
+    Given User enter the username as "ledacminh02"
+    Given User enter the password as "HaNoi@2023"
     When User click on the login button
     But Login should fail
