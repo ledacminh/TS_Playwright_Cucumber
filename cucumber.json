@@ -1,5 +1,6 @@
 {
     "default": {
+        "tags": "",
         "formatOptions": {
             "snippetInterface": "async-await"
         },
