@@ -4,9 +4,6 @@ import Assert from '../../helper/wrapper/assert';
 import { fixture } from '../../hook/pageFixture';
 import LoginPage from '../page/loginPage';
 
-
-setDefaultTimeout(60 * 1000 * 2)
-
 let loginPage: LoginPage;
 let assert: Assert;
 
@@ -17,26 +14,19 @@ Given('User navigates to the application', async function () {
 
 });
 
-
 Given('User click on the login link', { timeout: 2 * 5000 }, async function () {
     loginPage.clickOnLoginLink();
     fixture.logger.info("User click on the login link");
 
 });
 
-
-
 Given('User enter the username as {string}', async function (username) {
     await loginPage.enterUsername(username);
 });
 
-
-
 Given('User enter the password as {string}', async function (password) {
     await loginPage.enterPassword(password);
 });
-
-
 
 When('User click on the login button', async function () {
     await loginPage.clickOnButtonLogin();

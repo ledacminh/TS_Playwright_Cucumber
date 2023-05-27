@@ -5,7 +5,6 @@ import { LoginUi } from "../ui/loginUI";
 
 export default class LoginPage {
     private base: PlaywrightWrapper;
-    // private loginUi: LoginUi;
     private assert: Assert
     constructor(page: Page) {
         this.base = new PlaywrightWrapper(page);

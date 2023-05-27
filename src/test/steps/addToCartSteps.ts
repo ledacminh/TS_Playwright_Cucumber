@@ -15,7 +15,6 @@ When('user search for a {string}', async function (book) {
 
 });
 
-
 When('user add the book to the cart', async function () {
     await fixture.page.locator("//strong[text()='HP2']").click();
     await fixture.page.waitForTimeout(3000);
@@ -24,8 +23,6 @@ When('user add the book to the cart', async function () {
     fixture.logger.info("User add the book to the cart");
 
 });
-
-
 
 Then('the cart badge should get updated', async function () {
     await fixture.page.locator("(//mat-icon[@role='img'])[2]").click();
