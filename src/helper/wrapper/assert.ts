@@ -22,5 +22,4 @@ export default class Assert {
         await expect(actualString).toBe(expectString);
     }
 
-
 }
