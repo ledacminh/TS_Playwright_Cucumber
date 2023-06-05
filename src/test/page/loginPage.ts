@@ -29,7 +29,7 @@ export default class LoginPage {
 
     async assertMessageLoginUnscucessfully() {
         const message = await this.base.getTextElement(LoginUi.messageLoginFaild);
-        await this.assert.assertString(message, "Username or Password is incorrect.");
+        await this.assert.assertString(message, "Username or Password is incorrect");
     }
 
     async navigateToTheApplycation() {
